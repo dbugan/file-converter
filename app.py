@@ -42,3 +42,6 @@ def file_converter(ds_name):
         file_name = re.split('[/\\\]', file)[-1]
         to_json(df, tgt_base_dir, ds_name, file_name)
 
+ds_name = 'orders'
+
+file_converter(ds_name)
